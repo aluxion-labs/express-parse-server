@@ -34,6 +34,10 @@ docker run -d -p 33033:33033 -v <path/to/your/dashboard-config.yml>:/usr/src/app
 #### Example
 
 ```sh
-docker run -d -p 33033:33033 -v /home/aluxion/docker/dashboard-config.yml:/usr/src/app/dashboard-config.yml -v /home/aluxion/docker/server-config.yml:/usr/src/app/server-config.yml -v /home/aluxion/docker/apn_dev.p12:/usr/src/app/apn_dev.p12 -v /home/aluxion/docker/apn_pro.p12:/usr/src/app/apn_pro.p12  aluxion-labs/express-parse-server
-ce596f51829df82b6fbe12514b6d5269e8019eedb00cc60d1176d4e54f62a653
+docker run -d -p 33033:33033 -v /home/aluxion/docker/dashboard-config.yml:/usr/src/app/dashboard-config.yml 
+                             -v /home/aluxion/docker/server-config.yml:/usr/src/app/server-config.yml 
+                             -v /home/aluxion/docker/apn_dev.p12:/usr/src/app/apn_dev.p12 
+                             -v /home/aluxion/docker/apn_pro.p12:/usr/src/app/apn_pro.p12  
+                             aluxion-labs/express-parse-server
+                             ce596f51829df82b6fbe12514b6d5269e8019eedb00cc60d1176d4e54f62a653
 ```
