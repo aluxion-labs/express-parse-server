@@ -28,13 +28,13 @@ docker rmi [-f] <IMAGE ID>
 ```
 #### Run your image (remove the daemon option in order to check for launching errors -d)
 ```sh
-docker run -d -p 33033:33033 -v <path/to/your/dashboard-config.yml>:/usr/src/app/dashboard-config.yml -v <path/to/your/server-config.yml>:/usr/src/app/server-config.yml <username>/express-parse-server
+docker run -d -p <port_out>:33033 -v <path/to/your/dashboard-config.yml>:/usr/src/app/dashboard-config.yml -v <path/to/your/server-config.yml>:/usr/src/app/server-config.yml <username>/express-parse-server
 ```
 
 #### Example
 
 ```sh
-docker run -d -p 33033:33033 -v /home/aluxion/docker/dashboard-config.yml:/usr/src/app/dashboard-config.yml 
+docker run -d -p 33034:33033 -v /home/aluxion/docker/dashboard-config.yml:/usr/src/app/dashboard-config.yml 
                              -v /home/aluxion/docker/server-config.yml:/usr/src/app/server-config.yml 
                              -v /home/aluxion/docker/apn_dev.p12:/usr/src/app/apn_dev.p12 
                              -v /home/aluxion/docker/apn_pro.p12:/usr/src/app/apn_pro.p12  
