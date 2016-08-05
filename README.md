@@ -33,8 +33,9 @@ docker run -d -p <port_out>:33033 -v <path/to/your/dashboard-config.yml>:/usr/sr
 
 #### Example
 
-[a example dashboard-config.yml](https://github.com/aluxion-labs/express-parse-server/blob/master/dashboard-config.example.yml)
-[a example server-config.yml](https://github.com/aluxion-labs/express-parse-server/blob/master/server-config.example.yml)
+[example dashboard-config.yml](https://github.com/aluxion-labs/express-parse-server/blob/master/dashboard-config.example.yml)
+
+[example server-config.yml](https://github.com/aluxion-labs/express-parse-server/blob/master/server-config.example.yml)
 
 ```sh
 docker run -d -p 33034:33033 -v /home/aluxion/docker/dashboard-config.yml:/usr/src/app/dashboard-config.yml 
