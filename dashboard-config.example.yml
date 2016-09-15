@@ -1,8 +1,8 @@
 apps:
-  serverURL: "http://localhost:33033/parse"
-  appId: "myAppId"
-  masterKey: "myMasterKey"
-  appName: "Parse dashboard"
+  - serverURL: "http://localhost:33033/parse"
+    appId: "myAppId"
+    masterKey: "myMasterKey"
+    appName: "Parse dashboard"
 users:
-  user: "user"
-  pass: "pass"
+  - user: "user"
+    pass: "password"

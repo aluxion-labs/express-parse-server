@@ -16,7 +16,7 @@ node server.js
 
 ## In Docker
 ```sh
-You need to specify a config.yml file in your host machine, then mount it when launching the container, check config.example.yml.
+You need to specify a dashboard-config.yml and server-config.yml file in your host machine, then mount it when launching the container, check dashboard-config.example.yml and server-config.example.yml
 ```
 #### Build your image
 ```sh
